@@ -10,7 +10,7 @@ m = 10;
 for ( let i = 0; i < n; i++ ){
     arr[i] = [];
     for ( let j = 0; j < m; j++){
-        randomNumber = Math.trunc(Math.random()*42 - 21);
+        randomNumber = Math.trunc(Math.random()*41 - 20);
         arr[i].push(randomNumber);
     }
     document.writeln(arr[i] + "<br>");

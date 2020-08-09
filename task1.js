@@ -9,7 +9,7 @@
 
 let volumeUser = "В", i, tmp, arrUser = [];
 do {
-    let volumeUser = +prompt("Введите длинну масива:");
+     volumeUser = +prompt("Введите длинну масива:");
     if (!isNaN(volumeUser)) {
         while (arrUser.length < volumeUser) {
             let varUser = +prompt("Введите числовой элемент массива,  осталось : " + (volumeUser - arrUser.length));
@@ -19,10 +19,9 @@ do {
                 alert("Введите числовое значение элемента масива");
             }
         }
+        document.writeln(arrUser + "<br>");
+        break;
     }
-    document.writeln(arrUser + "<br>");
-
-break;
 } while (isNaN(volumeUser));
 if (arrUser.length % 2 === 0) {
     for (i = 0; i < arrUser.length; i += 2) {
